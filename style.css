@@ -1,0 +1,118 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make html and body take full height */
+html, body {
+  height: 100%;
+}
+
+/* Body as flex container column */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Wrapper fills available space */
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container Utility */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  background-color: #0b3d91;
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* New World Cup Heading */
+.worldcup-heading {
+  font-size: 1.8rem;
+  color: #ffd700;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* World Cup Gallery */
+.worldcup-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.worldcup-gallery img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(11, 61, 145, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.worldcup-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(11, 61, 145, 0.5);
+}
+
+
+
+
+/* Hero Section */
+.hero {
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #f9f9f9, #e6ecf3);
+  text-align: center;
+  flex-grow: 1;
+}
+
+.hero-title {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  color: #0b3d91;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background-color: #0b3d91;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
