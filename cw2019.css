@@ -1,0 +1,279 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f8fc;
+  color: #222;
+  line-height: 1.6;
+  padding: 0 20px 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b3d91;
+  color: white;
+  padding: 15px 20px;
+  border-bottom: 4px solid #07306d;
+}
+
+.navbar .nav-left h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navbar .nav-right p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+hr {
+  margin: 10px auto;
+  width: 60%;
+  border: 1px solid #ccc;
+}
+
+/* Main Content */
+main {
+  margin-top: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* Paragraph and Source */
+.source {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+.qualification-table-container {
+  margin: 30px auto;
+  max-width: 960px;
+  overflow-x: auto;
+  font-family: Arial, sans-serif;
+}
+
+.qualification-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  color: #000;
+}
+
+.qualification-table th,
+.qualification-table td {
+  border: 1px solid #aaa;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.qualification-table thead th {
+  background-color: #f2f2f2;
+  text-align: left;
+  font-weight: bold;
+}
+
+.qualification-table td a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.qualification-table td a:hover {
+  text-decoration: underline;
+}
+
+.total-row td {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+
+.section-header {
+  background-color: #e2e8f0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .qualified-teams h2 {
+    font-size: 1.3rem;
+  }
+
+  .qualified-table th,
+  .qualified-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+
+/* Styles for the 2011 World Cup Winner Video (Your Own Video) */
+.winner-video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* This creates a 16:9 aspect ratio (adjust if your video has a different aspect ratio) */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; /* Ensures it doesn't overflow its parent */
+  background-color: #000; /* Background color while video loads */
+  margin: 20px auto; /* Adds vertical space and centers the container */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* IMPORTANT CHANGE: Target the iframe directly within the container */
+.winner-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; /* Remove default iframe border */
+}
+
+.winner-video-container h3 {
+  text-align: center;
+  margin-bottom: 15px; /* Space below the heading */
+  color: #333; /* Darker text color */
+}
+
+.winner-video-container p {
+  text-align: center;
+  margin-top: 15px; /* Space above the paragraph */
+  color: #555; /* Slightly lighter text color */
+  font-size: 0.95em; /* Slightly smaller font */
+}
+
+.highlight {
+  background-color: #ef4444;
+  color: white;
+  font-weight: bold;
+}
+
+.summary {
+  background-color: #e2e8f0;
+  font-weight: bold;
+}
+/* Full Scorecard Styling */
+.scorecard-container {
+  background-color: #f9f9f9;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scorecard-container h2 {
+  color: #1a202c;
+  margin-bottom: 10px;
+}
+
+.innings {
+  margin-top: 25px;
+}
+
+.innings h3 {
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+.innings h4 {
+  margin-top: 20px;
+  color: #4a5568;
+}
+
+.scorecard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.scorecard-table th,
+.scorecard-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.scorecard-table th {
+  background-color: #e2e8f0;
+  color: #1a202c;
+}
+
+.scorecard-table tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: green;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .scorecard-table th, .scorecard-table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .innings h3, .innings h4 {
+    font-size: 1rem;
+  }
+
+  .scorecard-container {
+    padding: 15px;
+  }
+}
+
+
+
+.result {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #004080;
+  color: white;
+  border-radius: 8px;
+}
